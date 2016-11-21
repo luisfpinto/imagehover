@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Page Title</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript">
+        function SetValues()
+        {
+          var s = window.event.clientX.toString() + 'px';
+          // document.getElementById('divCoord').innerText = s;
+          document.getElementById("divCoord").style.width=s
+          console.log(s);
+        }
+</script>
+        </head>
+    <body onmousemove=SetValues()>
+      <div id="divCoord" class="image-slider">
+      <img src="example1.png" >
+      <div><img src="example2.jpg" /></div>
+      </div>
+    </body>
+</html>
